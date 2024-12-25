@@ -1,0 +1,347 @@
+body {
+    background-color: rgb(161, 18, 18);
+    text-align: center;
+}
+/* configuració del titol */
+h2{
+    color:white;
+    text-shadow: 3px 3px black;
+    font-size: 120px;
+    animation: color 1s infinite;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+}
+
+h2:hover {
+    transform: scale(1.15);
+}
+/* animació del color de títol */
+@keyframes color { 
+    0% {color: rgb(167, 7, 7);}
+    50% {color: rgb(243, 223, 45);}
+    100% {color: rgb(167, 7, 7);}
+
+}
+
+/* els 2 gifs arbres de Nadal */
+.gif1 {
+    position:absolute;
+    left: 50px;
+    top: 40px;
+    animation: girar 3s infinite;
+}
+
+.gif2 {
+    position: absolute;
+    left: 1130px;
+    top: 40px;
+    animation: girar 3s infinite;
+}
+
+@keyframes girar {
+    0% {transform:rotateY(0deg)}
+    50% {transform:rotateY(180deg)}
+    100% {transform:rotateY(360deg)}
+}
+
+/* estrelles que van d'esquerra a dreta */
+.star {
+    animation: estrella 3s infinite;
+}
+@keyframes estrella {
+        0% {transform: translate(-500px, -500px);}
+        50% {transform: translate(500px,-500px);}
+        100% {transform: translate(-500px,-500px);}}
+
+.star2 {
+    animation: estrella2 3s infinite;
+}
+@keyframes estrella2 {
+    0% {transform: translate(500px,-500px);}
+    50% {transform: translate(-500px,-500px);}
+    100% {transform: translate(500px,-500px);}}
+
+/* imatge dels camells */
+.dintre {
+    position: relative;
+    left: 0px;
+    top: 50px;
+}
+
+/* text sota la imatge nadalenca */
+
+h3 {
+    color:white;
+}
+
+/* gifs regals dels costats, els hi poso també animacions perquè s'expandeixin*/
+
+#regal1{
+    position: absolute;
+    bottom: 200px;
+    left: 60px;
+    animation: regal 2s infinite;
+}
+
+@keyframes regal {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.15);}
+    100% {transform: scale(1);}
+}
+
+#regal2{
+    position: absolute;
+    bottom: 200px;
+    right: 60px;
+    animation: regal 2s infinite;
+}
+
+/* Configuro les divisions extensibles */
+
+#castella {
+    position: absolute;
+    bottom: 80px;
+    left: 150px;
+    width: 100px;
+    height: 70px;
+    background-color: white;
+    text-align: center;
+}
+
+#castella:hover {
+    background-color: green;
+    color:white;
+    font-size: 17px;
+    transform: rotateX(180deg);
+    width: 150px;
+    height: 100px;
+}
+
+#angles {
+    position: absolute;
+    bottom: 80px;
+    right: 150px;
+    width: 100px;
+    height: 70px;
+    background-color: white;
+    text-align: center;
+}
+
+#angles:hover {
+    background-color: green;
+    color:white;
+    font-size: 16.5px;
+    transform: rotateX(180deg);
+    width: 150px;
+    height: 100px;
+}
+
+/* TOTS ELS FLOCS DE NEU, CONFIGURACIÓ DE COM CAUEN */
+.neu {
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    font-size: 40px;
+    color: white;
+    animation: caure 8s linear infinite;
+}
+
+@keyframes caure {
+    0% {transform: translate(30px, -700px);}
+    100% {transform: translate(30px, 136px);}
+  
+}
+
+.neu2 {
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    font-size: 40px;
+    color: white;
+    animation: caure2 6s linear infinite;
+}
+
+@keyframes caure2 {
+    0% {transform: translate(100px, -750px);}
+    100% {transform: translate(100px, 40px);}
+  
+}
+
+.neu3 {
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    font-size: 40px;
+    color: white;
+    animation: caure3 8s linear infinite;
+}
+
+@keyframes caure3 {
+    0% {transform: translate(230px, -850px);}
+    100% {transform: translate(230px, 0px);}
+  
+}
+
+.neu4 {
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    font-size: 40px;
+    color: white;
+    animation: caure4 5s linear infinite;
+}
+
+@keyframes caure4 {
+    0% {transform: translate(330px, -900px);}
+    100% {transform: translate(330px, -130px);}
+  
+}
+
+.neu5 {
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    font-size: 40px;
+    color: white;
+    animation: caure5 7s linear infinite;
+}
+
+@keyframes caure5 {
+    0% {transform: translate(430px, -1100px);}
+    100% {transform: translate(430px, -220px);}
+  
+}
+
+.neu6 {
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    font-size: 40px;
+    color: white;
+    animation: caure6 6s linear infinite;
+}
+
+@keyframes caure6 {
+    0% {transform: translate(530px, -1200px);}
+    100% {transform: translate(530px, -310px);}
+}
+
+.neu7 {
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    font-size: 40px;
+    color: white;
+    animation: caure7 5s linear infinite;
+}
+
+@keyframes caure7 {
+    0% {transform: translate(630px, -1300px);}
+    100% {transform: translate(630px, -410px);}
+  
+}
+
+.neu8 {
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    font-size: 40px;
+    color: white;
+    animation: caure8 9s linear infinite;
+}
+
+@keyframes caure8 {
+    0% {transform: translate(730px, -1400px);}
+    100% {transform: translate(730px, -500px);}
+  
+}
+
+.neu9 {
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    font-size: 40px;
+    color: white;
+    animation: caure9 9s linear infinite;
+}
+
+@keyframes caure9 {
+    0% {transform: translate(830px, -1400px);}
+    100% {transform: translate(830px, -570px);}
+  
+}
+
+.neu10 {
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    font-size: 40px;
+    color: white;
+    animation: caure10 6s linear infinite;
+}
+
+@keyframes caure10 {
+    0% {transform: translate(930px, -1500px);}
+    100% {transform: translate(930px, -680px);}
+  
+}
+
+.neu11 {
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    font-size: 40px;
+    color: white;
+    animation: caure11 7s linear infinite;
+}
+
+@keyframes caure11 {
+    0% {transform: translate(1030px, -1600px);}
+    100% {transform: translate(1030px, -740px);}
+  
+}
+
+.neu12 {
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    font-size: 40px;
+    color: white;
+    animation: caure12 8s linear infinite;
+}
+
+@keyframes caure12 {
+    0% {transform: translate(1130px, -1700px);}
+    100% {transform: translate(1130px, -850px);}
+  
+}
+
+.neu13 {
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    font-size: 40px;
+    color: white;
+    animation: caure13 8s linear infinite;
+}
+
+@keyframes caure13 {
+    0% {transform: translate(1230px, -1800px);}
+    100% {transform: translate(1230px, -900px);}
+  
+}
+
+.neu14 {
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    font-size: 40px;
+    color: white;
+    animation: caure14 8s linear infinite;
+}
+
+@keyframes caure14 {
+    0% {transform: translate(1330px, -1900px);}
+    100% {transform: translate(1330px, -1080px);}
+  
+}
